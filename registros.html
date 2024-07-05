@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título de la página -->
+  <title>Usuarios Registrados</title>
+  <!-- Fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="estilos/formulario.css">
+</head>
+<style>
+  /* Estilo para el fondo del cuerpo del documento */
+  body {
+    background-image: url('img/fondo.jpeg'); /* Imagen de fondo */
+  }
+</style>
+<body>
+
+  <!-- Botón del menú -->
+  <div class="menu-btn">
+    <!-- Icono de menú -->
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <!-- Navegación principal -->
+  <nav class="nav-main">
+    <!-- Enlace al inicio -->
+    <a href="index.html">
+      <!-- Marca de navegación -->
+      <div class="nav-brand">REGISTRO<span class="logo-highlight">USUARIO</span></div>
+    </a>
+    <!-- Menú de navegación -->
+    <ul class="nav-menu">
+      <li>
+        <a class="open" href="registros.html">Registros</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor principal para la tabla de registros -->
+  <div class="registros">
+    <!-- Título de la sección de registros -->
+    <h1>Registros de usuarios</h1>
+    <!-- Tabla para mostrar los registros -->
+    <table>
+      <thead>
+        <tr>
+          <!-- Encabezados de la tabla -->
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Correo Electrónico</th>
+          <th>Cédula</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="registrosTabla">
+        <!-- Los datos se llenarán aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Biblioteca SweetAlert2 para alertas bonitas -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Archivo JavaScript externo -->
+  <script src="registros.js"></script>
+</body>
+</html>

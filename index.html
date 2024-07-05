@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título de la página -->
+  <title>Registro de Usuario</title>
+  <!-- Fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="estilos/formulario.css">
+</head>
+<style>
+  /* Estilo para el fondo del cuerpo del documento */
+  body{
+    background-image: url('/img/fondo.jpeg');
+  }
+</style>
+<body>
+
+  <!-- Botón del menú -->
+  <div class="menu-btn">
+    <!-- Icono de menú -->
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+
+  <!-- Navegación principal -->
+  <nav class="nav-main">
+    <!-- Enlace al inicio -->
+    <a href="index.html">
+      <!-- Marca de navegación -->
+      <div class="nav-brand">REGISTRO<span class="logo-highlight">USUARIO</span></div>
+    </a>
+    <!-- Menú de navegación -->
+    <ul class="nav-menu">
+      <li>
+        <a href="registros.html">Registros</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor principal del formulario de registro -->
+  <div class="espacio">
+    <div class="registro">
+      <!-- Formulario de registro de usuario -->
+      <form class="formulario" id="registerForm" onsubmit="handleSubmit(event)">
+        <!-- Título del formulario -->
+        <h1>Registro de usuario</h1>
+        <!-- Contenedor de los campos del formulario -->
+        <div class="contenedor" id="userInfo">
+          <!-- Campo de entrada para el nombre -->
+          <div class="input-contenedor">
+            <label class="label" for="nombre">Nombres :</label>
+            <i class="fas fa-user icon"></i>
+            <input type="text" id="nombre" placeholder="Nombres" required>
+            <span class="error-message" id="errorNombre"></span>
+          </div>
+          <!-- Campo de entrada para el apellido -->
+          <div class="input-contenedor">
+            <label class="label" for="apellido">Apellidos :</label>
+            <i class="fas fa-user icon"></i>
+            <input type="text" id="apellido" placeholder="Apellidos" required>
+            <span class="error-message" id="errorApellido"></span>
+          </div>
+          <!-- Campo de entrada para el correo electrónico -->
+          <div class="input-contenedor">
+            <label class="label" for="email">Correo Electrónico :</label>
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <span class="error-message" id="errorEmail"></span>
+          </div>
+          <!-- Campo de entrada para la cédula -->
+          <div class="input-contenedor">
+            <label class="label" for="cedula">Cédula :</label>
+            <i class="fas fa-id-card icon"></i>
+            <input type="text" id="cedula" placeholder="Cédula" required>
+            <span class="error-message" id="errorCedula"></span>
+          </div>
+          <!-- Campo de entrada para la dirección -->
+          <div class="input-contenedor">
+            <label class="label" for="direccion">Dirección :</label>
+            <i class="fas fa-home icon"></i>
+            <input type="text" id="direccion" placeholder="Dirección" required>
+            <span class="error-message" id="errorDireccion"></span>
+          </div>
+          <!-- Campo de entrada para el teléfono -->
+          <div class="input-contenedor">
+            <label class="label" for="telefono">Teléfono</label>
+            <i class="fas fa-phone icon"></i>
+            <input type="text" id="telefono" placeholder="Teléfono" required>
+            <span class="error-message" id="errorTelefono"></span>
+          </div>
+          <!-- Botón de envío del formulario -->
+          <button type="submit" class="boton boton-active">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Biblioteca SweetAlert2 para alertas bonitas -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Archivo JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
